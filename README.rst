@@ -183,9 +183,12 @@ Developing
 
 CSS and Styles
 Navigate to the public folder `docker-ckan/src/ckanext-tdp/ckanext/tdp/public`
-Run `npm install`
-To build the CSS use `npm run build`
-To watch the CSS for changes and automatically trigger a build, use `npm run watch`
+
+Run ``npm install``
+
+To build the CSS use ``npm run build``
+
+To watch the CSS for changes and automatically trigger a build, use ``npm run watch``
 
 PostCSS Is using Sugarss syntax https://github.com/postcss/sugarss and linted with stylelint https://github.com/stylelint/stylelint
 Source mapping is enabled to assist with debugging - this will be built with the CSS.
@@ -194,5 +197,5 @@ Source mapping is enabled to assist with debugging - this will be built with the
 Contributing
 ------------
 
-Navigate to the public folder `docker-ckan/src/ckanext-tdp/ckanext/tdp/public`
-Run `npm run lint` - ensure no errors are produced before committing work.
+Navigate to the public folder ``docker-ckan/src/ckanext-tdp/ckanext/tdp/public``
+Run ``npm run lint`` - ensure no errors are produced before committing work.
