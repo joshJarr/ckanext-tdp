@@ -1,0 +1,43 @@
+/* Add a new larger site screen size */
+
+@media (max-width: 767px)
+  body
+    padding: 0
+  .main,
+  [role=main]
+    padding: 20px
+
+@media (min-width: 1280px)
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container
+    width: 1280px
+    @mixin removeBackground
+
+  .primary.span9
+    width: 1020px
+
+@media (max-width: 1280px) and (min-width: 979px)
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container
+    width: 940px
+
+  .primary.span9
+    width: 700px
+
+[role=main],
+.main
+  background: white
+
+
+.wrapper
+  border: none
+  border-radius: 0
+  box-shadow: none
+  background: none
+  background-image: none
+  background-color: none
+
