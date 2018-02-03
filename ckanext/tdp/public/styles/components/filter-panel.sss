@@ -1,0 +1,91 @@
+/* Customisations for the Filter Panel */
+
+
+@media (max-width: 768px)
+  .filter-title
+    display: none
+  .toolbar .breadcrumb a
+    color: $primaryColor
+
+.filters
+  background-color: none
+  > div
+    padding-top: 2em
+    border-radius: 0
+
+  .filter-title
+    border-bottom: 5px solid $primaryColor
+    padding-bottom: 14px
+    margin-left: 15px
+
+  .module-heading
+    background-color: white
+    border-bottom: 1px solid $lightGrey
+    border-top: none
+    color: $primaryColor
+    font-size: 16px
+    margin-bottom: 10px
+
+  .nav-item
+    > a
+      background-color: white
+      border-radius: 10px
+      transition: background-color .3s
+
+      > span:last-of-type
+        float: right
+        background: $lightGrey
+        padding: 2px
+        min-width: 20px
+        border-radius: 20px
+        height: 20px
+        font-weight: bold
+        text-align: center
+
+    &.active
+      > a
+        color: #333
+        background-color: #f6f6f6
+
+        &:before,
+        &:after
+          display: none !important
+          height: 0 !important
+        &:hover
+          color: $fontColor
+          background-color: $lightGrey
+        > span
+          display: inline
+          &:last-of-type
+            background: $primaryColor
+            color: white
+
+          &:first-of-type
+            line-height: 26px
+
+      > li
+        > a:hover,
+        > a:focus
+          background-color: $lightGrey
+          color: $fontColor
+
+  .nav-facet .nav-item > a:hover:after,
+  .nav-facet .nav-item .active > a:after
+    display: none !important
+
+  .nav-facet .nav-item,
+  .module-footer
+    border: none
+
+  .nav-item.active,
+  .nav-aside li.active
+    background: white
+
+
+  .dataset-resources
+    display: inline-block
+    .label
+      text-shadow: none
+      border-radius: 0
+      padding: 4px 6px
+

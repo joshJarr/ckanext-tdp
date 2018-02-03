@@ -40,3 +40,7 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
+
+# CSS Build Process
+*.css.Map
+package-lock.json
