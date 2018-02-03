@@ -170,12 +170,16 @@ To publish a new version to PyPI follow these steps:
 
 -----
 
-# Overwrites for the default CKAN instance to provide custom styling.
+------------
+Overwrites for the default CKAN instance to provide custom styling.
+------------
 
-Modular CSS architecture is used, loosely based on [SMACSS](https://smacss.com/)
-Using [PostCSS](https://github.com/postcss/postcss) and the [Post CSS CLI](https://www.npmjs.com/package/postcss-cli).
+Modular CSS architecture is used, loosely based on SMACSS(https://smacss.com/)
+Using PostCSS(https://github.com/postcss/postcss) and the Post CSS CLI(https://www.npmjs.com/package/postcss-cli).
 
-##Developing
+------------
+Developing
+------------
 
 CSS and Styles
 Navigate to the public folder `docker-ckan/src/ckanext-tdp/ckanext/tdp/public`
@@ -183,10 +187,12 @@ Run `npm install`
 To build the CSS use `npm run build`
 To watch the CSS for changes and automatically trigger a build, use `npm run watch`
 
-PostCSS Is using [Sugarss syntax](https://github.com/postcss/sugarss) and linted with [stylelint](https://github.com/stylelint/stylelint)
+PostCSS Is using Sugarss syntax https://github.com/postcss/sugarss and linted with stylelint https://github.com/stylelint/stylelint
 Source mapping is enabled to assist with debugging - this will be built with the CSS.
 
-##Contributing
+------------
+Contributing
+------------
 
 Navigate to the public folder `docker-ckan/src/ckanext-tdp/ckanext/tdp/public`
 Run `npm run lint` - ensure no errors are produced before committing work.
