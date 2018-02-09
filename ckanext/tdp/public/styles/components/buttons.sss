@@ -25,7 +25,11 @@
       background: $primaryColor
       border-color: $primaryColor
 
-.pill
+.pill,
+.tag,
+a.tag
+  border: none
+  box-shadow: none
   background: $primaryColor
   color: white
   border-radius: $defaultRadius
@@ -34,6 +38,28 @@
   position: relative
   &:hover
     opacity: 0.7
+    border: none
+    box-shadow: none
+    background: $primaryColor
   > .remove > i
     font-size: 1.3em
     line-height: 1.7
+
+.dropdown.btn-group
+  &.open .btn.btn-primary.dropdown-toggle
+    background: $primaryColourLighter
+
+  .dropdown-menu
+    border: 0px solid #cecece
+    border-radius: 0
+    > li > a:hover,
+    > li > a:focus
+      @mixin removeBackground
+      background: $lightGrey
+      color: $fontColor
+
+.well
+  background: $lighterGrey
+  border-radius: 0
+  border: none
+  box-shadow: none
