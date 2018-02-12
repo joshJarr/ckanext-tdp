@@ -1,6 +1,11 @@
 /* Add a new larger site screen size */
 body
   @mixin removeBackground
+  font-family: 'Open Sans', sans-serif
+a
+  color: $primaryColor
+  &:hover
+    color: $primaryColourDarker
 @media (max-width: 767px)
   body
     padding: 0
@@ -42,6 +47,31 @@ body
   background-image: none
   background-color: none
 
-//TODO: Move to own file
-//FONTS
+.media-grid
+  background: none
+  border: none
 
+// QUICK HACK TO MAKE THE LIBARIES WORK
+@media (min-width: 768px)
+  .hero
+    background: url(https://partners.devon.gov.uk/librariesunlimited/wp-content/uploads/sites/7/2016/03/hero.jpg)
+    background-size: cover
+
+.homepage
+  .module-search
+    padding: 0
+    border-radius: 0
+    border: none
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.4)
+    .module-content
+      color: $fontColor
+      background: white
+      border: 1px solid $lightGrey
+    .tags
+      background: $lighterGrey
+      color: $fontColor
+  .box
+    box-shadow: none
+    border-radius: 0
+  .featured.media-overlay
+    display: none

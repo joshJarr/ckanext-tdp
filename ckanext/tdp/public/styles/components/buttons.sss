@@ -1,7 +1,6 @@
 /* Style overwrites for various buttons and links */
 .btn
   background: none
-  background-color: none
   background-image: none
   border: 1px solid $fontColor
   color: $fontColor
@@ -12,18 +11,16 @@
   transition: background .2s, border .2s
   &:hover
     color: $fontColor
-    background: #eee
-    background-color: none
-    background-image: none
-
+    // Why doesnt this work?
+    background: $lightGrey
   &.btn-primary
     text-shadow: none
     background: $primaryColor
     border-color: $primaryColor
     color: white
     &:hover
-      background: $primaryColor
-      border-color: $primaryColor
+      background: $primaryColourDarker
+      border-color: $primaryColourDarker
 
 .pill,
 .tag,
@@ -63,3 +60,16 @@ a.tag
   border-radius: 0
   border: none
   box-shadow: none
+
+.badge
+  background: $primaryColor
+  color: white
+  font-weight: bold
+  transition: background .3s
+  position: relative
+  height: 20px
+  width: 20px
+  border-radius: 3em
+  line-height: 17px
+  padding-left: 7px
+  box-sizing: border-box
